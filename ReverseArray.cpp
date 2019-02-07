@@ -2,9 +2,7 @@
 
 using namespace std;
 
-
-
-//void reverseArray(int numArr[], int n, int k) 
+ 
 void reverseArray(int numArr[], int n, int k)
 { 
 	for (int i = 0; i < n; i += k) 
@@ -28,9 +26,11 @@ int main()
 	int k = 5; 
 	int n = 5; 
 		
+	cout << "The Array is: " << endl;
+	cout << numArr[0] << " " << numArr[1] << " " << numArr[2] << " " <<  numArr[3] << " " << numArr[4] << endl;
 	reverseArray(numArr, n, k);
-	//reverseArray(numArr, n);
 		
+		cout << "The Reverse Array is: " << endl;
 		for (int i = 0; i < n; i++) 
 		{
 			cout << numArr[i] << " "; 
@@ -38,5 +38,3 @@ int main()
 			
 	return 0;
 }
-
-
